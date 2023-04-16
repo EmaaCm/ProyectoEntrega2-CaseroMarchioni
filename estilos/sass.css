@@ -4,17 +4,14 @@
   margin: 0%;
 }
 
-.navbar {
-  width: 100%;
-}
-
 body {
-  background: linear-gradient(skyblue, darkblue);
+  background: linear-gradient(#393053, #635985);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem #D4AF37;
 }
 
 p {
@@ -25,7 +22,8 @@ p {
   text-align: center;
   line-height: 1.5rem;
   letter-spacing: 0.008rem;
-  color: #000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem #D4AF37;
 }
 
 @media screen and (max-width: 768px) {
@@ -37,7 +35,6 @@ p {
     text-align: left;
     line-height: 1.5rem;
     letter-spacing: 0.01rem;
-    color: #000;
   }
 }
 @media screen and (max-width: 480px) {
@@ -49,7 +46,6 @@ p {
     text-align: left;
     line-height: 1.5rem;
     letter-spacing: 0.01rem;
-    color: #000;
   }
 }
 h1 {
@@ -57,7 +53,8 @@ h1 {
   font-weight: bolder;
   font-size: 30px;
   text-transform: uppercase;
-  color: #000;
+  color: whitesmoke;
+  -webkit-text-stroke: 0.03rem black;
   margin-top: 15px;
   margin-bottom: 40px;
   text-align: center;
@@ -69,7 +66,6 @@ h1 {
     font-weight: bolder;
     font-size: 25px;
     text-transform: uppercase;
-    color: #000;
     margin-top: 15px;
     margin-bottom: 30px;
     text-align: center;
@@ -81,7 +77,6 @@ h1 {
     font-weight: bolder;
     font-size: 20px;
     text-transform: uppercase;
-    color: #000;
     margin-top: 15px;
     margin-bottom: 25px;
     text-align: center;
@@ -92,10 +87,11 @@ h2 {
   font-weight: bolder;
   font-size: 25px;
   text-transform: uppercase;
-  color: black;
   text-decoration: underline;
   margin-bottom: 40px;
   text-align: center;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,7 +100,6 @@ h2 {
     font-weight: bolder;
     font-size: 15px;
     text-transform: uppercase;
-    color: black;
     text-decoration: underline;
     margin-bottom: 25px;
     margin-top: 100px;
@@ -117,7 +112,6 @@ h2 {
     font-weight: bolder;
     font-size: 20px;
     text-transform: uppercase;
-    color: black;
     text-decoration: underline;
     margin-bottom: 30px;
     text-align: center;
@@ -213,13 +207,55 @@ footer {
     flex-wrap: wrap;
   }
 }
+/*------------------------         SECCION TIPOS       --------------------*/
+.tipos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  width: 80%;
+  margin: 0% auto;
+}
 
+.tiposBox {
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: -2 rem;
+}
 
-/* ------------------------------------------------- */
-/*  */
+.b1 {
+  grid-column: 1/span 2;
+}
+
+.b2 {
+  grid-column: 3/span 4;
+}
+
+.b3 {
+  grid-column: 2/span 4;
+}
+
+.b4 {
+  grid-column: 1/span 2;
+}
+
+.b5 {
+  grid-column: 3/span 4;
+}
+
+.TipoImg {
+  border-radius: 4%;
+  height: 85%;
+  width: 100%;
+  filter: drop-shadow(12px 12px 10px black);
+}
+
+.tipoTitle {
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
 /*------------------------ SECCION COMPLEMENTOS Grids --------------------*/
-
-
 .padreCompl {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -302,7 +338,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: center;
   grid-area: texto0;
 }
@@ -313,7 +350,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   grid-area: texto1;
 }
 
@@ -323,7 +361,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: texto2;
 }
@@ -334,7 +373,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: texto3;
 }
@@ -345,7 +385,8 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: texto4;
 }
@@ -357,7 +398,8 @@ footer {
   font-weight: 400;
   font-size: 20px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: titulo0;
 }
@@ -368,7 +410,8 @@ footer {
   font-weight: 400;
   font-size: 20px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: titulo1;
 }
@@ -379,7 +422,8 @@ footer {
   font-weight: 400;
   font-size: 20px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: titulo2;
 }
@@ -390,7 +434,8 @@ footer {
   font-weight: 400;
   font-size: 20px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: titulo3;
 }
@@ -401,7 +446,8 @@ footer {
   font-weight: 400;
   font-size: 20px;
   line-height: 44px;
-  color: #000000;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: left;
   grid-area: titulo4;
 }
@@ -484,7 +530,8 @@ footer {
   font-weight: bolder;
   font-size: 15px;
   text-transform: uppercase;
-  color: black;
+  color: #e9bfbf;
+  -webkit-text-stroke: 0.003rem whitesmoke;
   text-decoration: underline;
   margin-bottom: 20px;
   text-align: center;
