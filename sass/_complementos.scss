@@ -1,0 +1,268 @@
+.padreCompl{
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    margin: 0 auto;
+    width:80%;
+    left: 2em;
+    right: 2em;
+    margin: 2em;
+
+}
+
+.hijo1{
+    display: grid;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hijo2{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hijo1-hijoA{
+
+display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+.hijo2-hijoA{
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hijo1-hijoA-fila-0{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 22px 200px 1fr;
+    grid-template-areas:
+    "titulo0 titulo0"
+    "texto0 texto0"
+    "libro libro";
+}
+
+
+
+.hijo2-hijoA-fila-1{
+    display: grid;
+    margin-left: 60px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 22px 200px 1fr;
+    text-align: end;
+    margin-bottom: 240px;
+    grid-template-areas:
+    "titulo1 titulo1"
+    "texto1 texto1"
+    "imagen imagen";
+}
+
+
+
+.hijo2-hijoA-fila-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 22px 150px 1fr;
+    grid-template-areas:
+    "titulo2 titulo2"
+    "texto2 texto2"
+    "minis minis"
+;
+}
+
+.hijo1-hijoA-fila-3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 22px 1fr 2fr;
+    grid-template-areas:
+    "titulo3 titulo3"
+    "texto3 texto3"
+    "mapa mapa"
+;
+}
+
+.hijo1-hijoA-fila-4{
+    display: grid;
+    grid-column:2fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 22px 1fr 2fr;
+    margin-left:90px ;
+    grid-template-areas:
+    "titulo4 titulo4"
+    "texto4 texto4"
+    "pantalla pantalla"
+;
+}
+
+
+/* ---------------Textos Grids Complementoss--------- */
+.texto0 {
+    font-family: 'Asul', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: center;
+    grid-area: texto0;
+}
+
+
+.texto1 {
+    font-family: 'Asul', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    grid-area: texto1;
+}
+
+.texto2 {
+    font-family: 'Asul', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: texto2;
+}
+
+.texto3 {
+    font-family: 'Asul', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: texto3;
+}
+
+.texto4 {
+    font-family: 'Asul', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: texto4;
+}
+
+
+
+.titulos0{
+    font-family: 'Asul', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: titulo0;
+
+
+}
+
+
+.titulos1{
+    font-family: 'Asul', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: titulo1;
+
+
+}
+
+.titulos2{
+
+    font-family: 'Asul', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: titulo2;
+}
+
+
+.titulos3{
+
+    font-family: 'Asul', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: titulo3;
+}
+
+.titulos4{
+
+    font-family: 'Asul', sans-serif;
+    font-style:italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    color: #e9bfbf;
+    -webkit-text-stroke: 0.003rem whitesmoke;
+    text-align: left;
+    grid-area: titulo4;
+}
+
+
+/* ---------------Imagenes Grids Complementoss--------- */
+
+
+.ImagenLibro{
+width: 80%;
+height: 80%;
+grid-area: libro;
+filter: drop-shadow(12px 12px 10px black);
+}
+
+.ImagenComplemento{
+    width: 160px;
+    height: 150px;
+grid-area: imagen;
+filter: drop-shadow(12px 12px 10px black);
+}
+
+.imagenMapas{
+    width: 200px;
+    height:200px;
+    grid-area: mapa;
+    filter: drop-shadow(12px 12px 10px black);
+}
+
+.imagenPantalla{
+    width: 200px;
+    height: 200px;
+    grid-area: pantalla;
+    filter: drop-shadow(12px 12px 10px black);
+}
+

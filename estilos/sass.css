@@ -144,70 +144,6 @@ h2 {
     margin: 10%;
   }
 }
-/* -----------------------------------------FOOTER---------------------- */
-footer {
-  background-color: whitesmoke;
-  height: auto;
-  width: 100%;
-  border: 8px outset blueviolet;
-  margin-top: 2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 768px) {
-  footer {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  footer {
-    width: 100%;
-    padding: 1rem;
-  }
-}
-.redesfoot {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.boxFoot {
-  display: flex;
-  height: 100px;
-  width: 100px;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 1rem;
-  margin-left: 2rem;
-}
-
-@media screen and (max-width: 768px) {
-  .boxFoot {
-    display: flex;
-    height: 2rem;
-    width: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-left: 2rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .boxFoot {
-    display: flex;
-    height: 2rem;
-    width: 2rem;
-    margin: 1rem;
-    justify-content: center;
-    align-content: space-around;
-    flex-wrap: wrap;
-  }
-}
-/*------------------------         SECCION TIPOS       --------------------*/
 .tipos {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -215,8 +151,7 @@ footer {
   width: 80%;
   margin: 0% auto;
 }
-
-.tiposBox {
+.tipos .tiposBox {
   text-align: center;
   padding: 0.5rem;
   margin-bottom: -2 rem;
@@ -255,7 +190,90 @@ footer {
   text-align: center;
 }
 
-/*------------------------ SECCION COMPLEMENTOS Grids --------------------*/
+@media screen and (max-width: 768px) {
+  .TipoImg {
+    border-radius: 4%;
+    height: 70%;
+    width: 75%;
+    filter: drop-shadow(12px 12px 10px black);
+  }
+}
+@media screen and (max-width: 480px) {
+  .TipoImg {
+    border-radius: 4%;
+    height: 70%;
+    width: 75%;
+    filter: drop-shadow(12px 12px 10px black);
+  }
+}
+footer {
+  background-color: whitesmoke;
+  height: auto;
+  width: 100%;
+  border: 8px outset blueviolet;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+footer .redesfoot {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+footer .redesfoot .boxFoot {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+  footer .redesfoot {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .redesfoot .boxFoot {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer {
+    width: 100%;
+    padding: 1rem;
+  }
+  footer .redesfoot {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .redesfoot .boxFoot {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+}
 .padreCompl {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -391,7 +409,6 @@ footer {
   grid-area: texto4;
 }
 
-/* ---------------Titulos Grids Complementoss--------- */
 .titulos0 {
   font-family: "Asul", sans-serif;
   font-style: italic;
@@ -481,8 +498,45 @@ footer {
   filter: drop-shadow(12px 12px 10px black);
 }
 
-/* -------------------------------------------------------------------- */
-/* --------------------------SECCION - POPULARES----------------------------------------- */
+.carruselDesc {
+  display: flex;
+  align-content: center;
+  margin: auto;
+  width: 60%;
+  height: 70%;
+}
+
+@media screen and (max-width: 768px) {
+  .carruselDesc {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    width: 82%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .TextDescargas {
+    padding: 10%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carruselDesc {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    width: 82%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .TextDescargas {
+    padding: 10%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
 .gridPopu {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -538,16 +592,6 @@ footer {
 }
 
 /* -------------------------------------------------------------------- */
-/* --------------------------SECCION - DESCARGAS----------------------------------------- */
-.carruselDesc {
-  display: flex;
-  align-content: center;
-  margin: auto;
-  width: 60%;
-  height: 70%;
-}
-
-.textDesc {
-  -webkit-text-stroke: 0.5px black;
-  color: antiquewhite;
-}/*# sourceMappingURL=sass.css.map */
+/* --------------------------SECCION - POPULARES----------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* --------------------------SECCION - DESCARGAS----------------------------------------- *//*# sourceMappingURL=sass.css.map */

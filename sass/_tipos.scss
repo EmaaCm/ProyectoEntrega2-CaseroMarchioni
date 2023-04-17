@@ -1,0 +1,69 @@
+
+.tipos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    width: 80%;
+    margin: 0% auto;
+    .tiposBox{
+        text-align: center;
+        padding: 0.5rem;
+        margin-bottom: -2 rem;
+        
+    }
+
+
+}
+
+.b1{
+    grid-column: 1/ span 2;
+}
+
+.b2{
+    grid-column:3/ span 4;
+}
+
+.b3{
+    grid-column: 2/ span 4;
+
+}
+
+.b4{
+    grid-column: 1/ span 2;
+
+}
+
+.b5{
+grid-column:3/ span 4;
+}
+.TipoImg{
+    border-radius: 4%;
+    height: 85%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+}
+
+
+.tipoTitle{
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+.TipoImg{
+    border-radius: 4%;
+    height: 70%;
+    width: 75%;
+    filter: drop-shadow(12px 12px 10px black);
+}
+}
+
+@media screen and (max-width:480px){
+    .TipoImg{
+        border-radius: 4%;
+        height: 70%;
+        width: 75%;
+        filter: drop-shadow(12px 12px 10px black);
+    }
+    }
