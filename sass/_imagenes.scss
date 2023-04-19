@@ -2,8 +2,9 @@
     filter: drop-shadow(20px 20px 15px black);
     border: 0.2rem solid steelblue;
     padding:  0.5rem;
-    margin: 10%;
-
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 15%;
 }
 
 @media screen and (max-width:768px){
@@ -13,7 +14,9 @@
     filter: drop-shadow(10px 10px 5px black);
     border: 0.2rem solid steelblue;
     padding:  0.5rem;
-    margin: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 15%;
 }
 }
 
@@ -24,6 +27,8 @@
     filter: drop-shadow(5px 5px 2.5px black);
     border: 0.2rem solid steelblue;
     padding:  0.5rem;
-    margin: 10%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 15%;
 }
 }

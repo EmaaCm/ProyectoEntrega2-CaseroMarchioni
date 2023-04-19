@@ -32,7 +32,7 @@ p {
     font-weight: 700;
     font-size: 1.5rem;
     margin: 2%;
-    text-align: left;
+    text-align: center;
     line-height: 1.5rem;
     letter-spacing: 0.01rem;
   }
@@ -43,7 +43,7 @@ p {
     font-weight: 700;
     font-size: 1.5rem;
     margin: 2%;
-    text-align: left;
+    text-align: center;
     line-height: 1.5rem;
     letter-spacing: 0.01rem;
   }
@@ -88,7 +88,7 @@ h2 {
   font-size: 25px;
   text-transform: uppercase;
   text-decoration: underline;
-  margin-bottom: 40px;
+  margin-bottom: 1rem;
   text-align: center;
   color: #e9bfbf;
   -webkit-text-stroke: 0.003rem whitesmoke;
@@ -117,33 +117,6 @@ h2 {
     text-align: center;
   }
 }
-.imgIni {
-  filter: drop-shadow(20px 20px 15px black);
-  border: 0.2rem solid steelblue;
-  padding: 0.5rem;
-  margin: 10%;
-}
-
-@media screen and (max-width: 768px) {
-  .imgIni {
-    height: 90%;
-    width: 80%;
-    filter: drop-shadow(10px 10px 5px black);
-    border: 0.2rem solid steelblue;
-    padding: 0.5rem;
-    margin: 10%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .imgIni {
-    height: 70%;
-    width: 80%;
-    filter: drop-shadow(5px 5px 2.5px black);
-    border: 0.2rem solid steelblue;
-    padding: 0.5rem;
-    margin: 10%;
-  }
-}
 .tipos {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -159,22 +132,27 @@ h2 {
 
 .b1 {
   grid-column: 1/span 2;
+  grid-template-rows: 1;
 }
 
 .b2 {
   grid-column: 3/span 4;
+  grid-template-rows: 1;
 }
 
 .b3 {
   grid-column: 2/span 4;
+  grid-template-rows: 2;
 }
 
 .b4 {
   grid-column: 1/span 2;
+  grid-template-rows: 4;
 }
 
 .b5 {
   grid-column: 3/span 4;
+  grid-template-rows: 4;
 }
 
 .TipoImg {
@@ -191,19 +169,53 @@ h2 {
 }
 
 @media screen and (max-width: 768px) {
-  .TipoImg {
+  .tipos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0% auto;
+  }
+  .tipos .tiposBox {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: -2 rem;
+  }
+  .tipos .tiposBox .TipoImg {
     border-radius: 4%;
     height: 70%;
     width: 75%;
     filter: drop-shadow(12px 12px 10px black);
   }
+  .tipos .tiposBox .tipoTitle {
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 480px) {
-  .TipoImg {
+  .tipos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0% auto;
+  }
+  .tipos .tiposBox {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: -2 rem;
+  }
+  .tipos .tiposBox .TipoImg {
     border-radius: 4%;
     height: 70%;
     width: 75%;
     filter: drop-shadow(12px 12px 10px black);
+  }
+  .tipos .tiposBox .tipoTitle {
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2rem;
   }
 }
 footer {
@@ -211,7 +223,7 @@ footer {
   height: auto;
   width: 100%;
   border: 8px outset blueviolet;
-  margin-top: 2rem;
+  margin-top: 4rem;
   align-items: center;
   justify-content: center;
 }
@@ -276,226 +288,359 @@ footer .redesfoot .boxFoot {
 }
 .padreCompl {
   display: grid;
-  grid-template-columns: 50% 50%;
-  justify-content: space-around;
+  grid-template-columns: 25% 25% 25% 25%;
   margin: 0 auto;
   width: 80%;
-  left: 2em;
-  right: 2em;
-  margin: 2em;
+  align-items: baseline;
+  text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .padreCompl {
+    margin: 0 auto;
+    width: 80%;
+    align-items: baseline;
+    text-align: center;
+  }
+  .padreCompl .hijo1 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA {
+    width: 100%;
+    height: 100%;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+  .padreCompl .hijo2 {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA {
+    width: 100%;
+    height: 100%;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .padreCompl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+    align-items: baseline;
+    text-align: center;
+  }
+  .padreCompl .hijo1 {
+    grid-row: 1/span 2;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA {
+    width: 100%;
+    height: 100%;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-1 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 {
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo1 .hijo1-hijoA .hijo1-hijoA-fila-2 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+  .padreCompl .hijo2 {
+    grid-row: 3/span 4;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA {
+    width: 100%;
+    height: 100%;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-1 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    height: 50%;
+    width: 100%;
+    filter: drop-shadow(12px 12px 10px black);
+    border: 4px solid steelblue;
+    border-radius: 15%;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 .imagenComp {
+    width: 60%;
+    height: 30%;
+    margin-bottom: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 .tiposh2 {
+    margin-top: 3rem;
+  }
+  .padreCompl .hijo2 .hijo2-hijoA .hijo2-hijoA-fila-2 .textoTipo {
+    font-family: "Asul", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #e9bfbf;
+    text-align: center;
+  }
+}
 .hijo1 {
-  display: grid;
+  grid-column: 1/span 2;
   width: 100%;
   height: 100%;
+  align-items: center;
 }
 
 .hijo2 {
-  display: grid;
+  grid-column: 3/span 4;
   width: 100%;
   height: 100%;
+  align-items: center;
 }
 
 .hijo1-hijoA {
-  display: grid;
   width: 100%;
   height: 100%;
 }
 
 .hijo2-hijoA {
-  display: grid;
   width: 100%;
   height: 100%;
 }
 
-.hijo1-hijoA-fila-0 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 22px 200px 1fr;
-  grid-template-areas: "titulo0 titulo0" "texto0 texto0" "libro libro";
+.hijo1-hijoA-fila-1 {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  height: 50%;
+  width: 100%;
+  filter: drop-shadow(12px 12px 10px black);
+  border: 4px solid steelblue;
+  border-radius: 15%;
+}
+
+.hijo1-hijoA-fila-2 {
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  height: 50%;
+  width: 100%;
+  filter: drop-shadow(12px 12px 10px black);
+  border: 4px solid steelblue;
+  border-radius: 15%;
 }
 
 .hijo2-hijoA-fila-1 {
-  display: grid;
-  margin-left: 60px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 22px 200px 1fr;
-  text-align: end;
-  margin-bottom: 240px;
-  grid-template-areas: "titulo1 titulo1" "texto1 texto1" "imagen imagen";
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  height: 50%;
+  width: 100%;
+  filter: drop-shadow(12px 12px 10px black);
+  border: 4px solid steelblue;
+  border-radius: 15%;
 }
 
 .hijo2-hijoA-fila-2 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 22px 150px 1fr;
-  grid-template-areas: "titulo2 titulo2" "texto2 texto2" "minis minis";
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  height: 50%;
+  width: 100%;
+  filter: drop-shadow(12px 12px 10px black);
+  border: 4px solid steelblue;
+  border-radius: 15%;
 }
 
-.hijo1-hijoA-fila-3 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 22px 1fr 2fr;
-  grid-template-areas: "titulo3 titulo3" "texto3 texto3" "mapa mapa";
+.imagenComp {
+  width: 85%;
+  height: 47%;
+  margin-bottom: 3rem;
 }
 
-.hijo1-hijoA-fila-4 {
-  display: grid;
-  grid-column: 2fr;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 22px 1fr 2fr;
-  margin-left: 90px;
-  grid-template-areas: "titulo4 titulo4" "texto4 texto4" "pantalla pantalla";
+.tiposh2 {
+  margin-top: 3rem;
 }
 
-/* ---------------Textos Grids Complementoss--------- */
-.texto0 {
+.textoTipo {
   font-family: "Asul", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 44px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
   text-align: center;
-  grid-area: texto0;
-}
-
-.texto1 {
-  font-family: "Asul", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  grid-area: texto1;
-}
-
-.texto2 {
-  font-family: "Asul", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: texto2;
-}
-
-.texto3 {
-  font-family: "Asul", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: texto3;
-}
-
-.texto4 {
-  font-family: "Asul", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: texto4;
-}
-
-.titulos0 {
-  font-family: "Asul", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: titulo0;
-}
-
-.titulos1 {
-  font-family: "Asul", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: titulo1;
-}
-
-.titulos2 {
-  font-family: "Asul", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: titulo2;
-}
-
-.titulos3 {
-  font-family: "Asul", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: titulo3;
-}
-
-.titulos4 {
-  font-family: "Asul", sans-serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 44px;
-  color: #e9bfbf;
-  -webkit-text-stroke: 0.003rem whitesmoke;
-  text-align: left;
-  grid-area: titulo4;
-}
-
-/* ---------------Imagenes Grids Complementoss--------- */
-.ImagenLibro {
-  width: 80%;
-  height: 80%;
-  grid-area: libro;
-  filter: drop-shadow(12px 12px 10px black);
-}
-
-.ImagenComplemento {
-  width: 160px;
-  height: 150px;
-  grid-area: imagen;
-  filter: drop-shadow(12px 12px 10px black);
-}
-
-.imagenMapas {
-  width: 200px;
-  height: 200px;
-  grid-area: mapa;
-  filter: drop-shadow(12px 12px 10px black);
-}
-
-.imagenPantalla {
-  width: 200px;
-  height: 200px;
-  grid-area: pantalla;
-  filter: drop-shadow(12px 12px 10px black);
 }
 
 .carruselDesc {
@@ -591,7 +736,36 @@ footer .redesfoot .boxFoot {
   text-align: center;
 }
 
-/* -------------------------------------------------------------------- */
-/* --------------------------SECCION - POPULARES----------------------------------------- */
-/* -------------------------------------------------------------------- */
-/* --------------------------SECCION - DESCARGAS----------------------------------------- *//*# sourceMappingURL=sass.css.map */
+.imgIni {
+  filter: drop-shadow(20px 20px 15px black);
+  border: 0.2rem solid steelblue;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .imgIni {
+    height: 90%;
+    width: 80%;
+    filter: drop-shadow(10px 10px 5px black);
+    border: 0.2rem solid steelblue;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .imgIni {
+    height: 70%;
+    width: 80%;
+    filter: drop-shadow(5px 5px 2.5px black);
+    border: 0.2rem solid steelblue;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+  }
+}/*# sourceMappingURL=sass.css.map */
