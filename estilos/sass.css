@@ -19,6 +19,22 @@ a {
   -webkit-text-stroke: 0.003rem #D4AF37;
 }
 
+.textNav2 {
+  display: none;
+  color: #d52525;
+  -webkit-text-stroke: 0.003rem #D4AF37;
+}
+
+@media screen and (max-width: 768px) {
+  .textNav {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .textNav {
+    display: none;
+  }
+}
 p {
   font-family: "Asul", sans-serif;
   font-weight: 700;
@@ -653,8 +669,9 @@ footer .redesfoot .boxFoot {
   display: flex;
   align-content: center;
   margin: auto;
-  width: 60%;
-  height: 70%;
+  margin-left: 28%;
+  width: 800px;
+  height: 450px;
 }
 
 @media screen and (max-width: 768px) {
@@ -748,7 +765,7 @@ footer .redesfoot .boxFoot {
   padding: 0.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 15%;
+  margin-left: 28%;
 }
 
 @media screen and (max-width: 768px) {

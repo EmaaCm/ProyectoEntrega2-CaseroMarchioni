@@ -24,5 +24,26 @@ a{
 .textNav{
     color:#d52525;
     -webkit-text-stroke: 0.003rem #D4AF37;
+}
+
+.textNav2{
+    display: none;
+    color:#d52525;
+    -webkit-text-stroke: 0.003rem #D4AF37;
 
 }
+
+
+@media screen and (max-width:768px){
+    .textNav{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    .textNav{
+        display: none;
+    }
+    
+}
+
